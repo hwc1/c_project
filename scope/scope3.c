@@ -1,6 +1,8 @@
 
 #include <stdio.h>
 
+int a = 0;
+
 int main()
 {
 	int i = 0;
@@ -12,11 +14,11 @@ int main()
 
 	//printf("j = %d\n", j);  error: ¡®j¡¯ undeclared (first use in this function)
 	printf("func = %d\n", func1(2));
+	printf("a = %d\n", a);
 }
 
-int func1(int a)
+int func1(int x)
 {
-	a += 1;
-	return a;
+	return x + 1;
 }
 		
